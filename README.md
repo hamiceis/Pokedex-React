@@ -3,9 +3,6 @@
 
 Projeto pokedex com todos os 150 pokemons.
 
-![Logo](https://pngimg.com/uploads/pokeball/pokeball_PNG24.png)
-
-
 ## Screenshots
 
 ![App Screenshot](https://i.ibb.co/c2Y0kGR/1661655498486.png)
