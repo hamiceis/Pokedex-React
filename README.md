@@ -16,7 +16,7 @@ Projeto pokedex com todos os 150 pokemons.
 
 ## Projeto iniciado em vite@latest
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+Para rodar esse projeto, você vai precisar copiar esse repositório no seu computador e instalar as depêndencias.
 
 #Instalação das depêndencias
 
@@ -25,3 +25,7 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 #Iniciar aplicação
 
 `npm run dev`
+
+#URL para acessar o projeto
+
+`http://localhost:3000` ou `http://127.0.0.1:5173/`
