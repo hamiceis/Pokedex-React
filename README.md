@@ -3,7 +3,7 @@
 
 Projeto pokedex com todos os 150 pokemons.
 
-![Logo](https://i.pinimg.com/originals/09/a6/ae/09a6ae937a6d9ef5cd10d132b59d6f5d.png)
+![Logo](https://i.pinimg.com/originals/09/a6/ae/09a6ae937a6d9ef5cd10d132b59d6f5d.png&h=200w200)
 
 
 ## Screenshots
