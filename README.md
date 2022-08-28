@@ -3,7 +3,7 @@
 
 Projeto pokedex com todos os 150 pokemons.
 
-![Logo]([https://i.pinimg.com/originals/09/a6/ae/09a6ae937a6d9ef5cd10d132b59d6f5d.png/200x200](https://imagensemoldes.com.br/wp-content/uploads/2020/04/Pokebola-Pok%C3%A9mon-PNG-1024x1022.png))
+![Logo](https://pngimg.com/uploads/pokeball/pokeball_PNG24.png)
 
 
 ## Screenshots
