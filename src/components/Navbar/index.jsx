@@ -13,7 +13,7 @@ export function Navbar() {
 
   //função para quando o usuário voltar para página inicial resetar o input e mostrar novamente a barra de pesquisa
   function reset() {
-    setNavbar(!navbar);
+    setNavbar(true);
     setSearch("");
   }
 
