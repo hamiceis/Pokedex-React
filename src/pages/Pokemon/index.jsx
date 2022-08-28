@@ -4,7 +4,7 @@ import { AuthContext } from "../../Providers/auth";
 import { useFetch } from "../../services/useFetch";
 
 export function Pokemon() {
-  //Pegando da contextAPI 
+
   const { setNavbar, navbar } = useContext(AuthContext);
   const { id } = useParams();
   const { data } = useFetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
@@ -20,7 +20,7 @@ export function Pokemon() {
     <div
       className={`bg-zinc-900 bg-cover py-5 w-full h-[100vh] flex flex-col items-center `}
     >
-      <div className="flex flex-col flex-wrap w-2/5 max-h-[800px] border-white border-2">
+      <div className="flex flex-col flex-wrap w-2/5 max-h-[800px] border-white border-2 sm:w-4/5" >
         <div className="flex justify-between items-center text-white">
           <p className="py-2 px-5 border-white  border-b-2 border-r-2 text-2xl font-medium">
             {`Nº${data.id ?? <p>Carregando</p>}`}

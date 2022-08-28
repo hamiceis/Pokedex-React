@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-//Hook personalizado, para fazer uma requisição na API
+
 
 export function useFetch(url) {
   const [data, setData] = useState([])

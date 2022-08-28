@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 
-//função para chamar da API, todos os pokemons e resolver para colocar dentro de um Array de promise;
+
 
 export function pokemonApi(url){
 

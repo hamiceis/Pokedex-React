@@ -5,22 +5,22 @@ import { useContext, useRef } from "react";
 import { AuthContext } from "../../Providers/auth";
 
 export function Navbar() {
-  //ContextAPI para passar o que o usuário pesquisa o pokemon, e a barra de pesquisa estar disponivel ou não
+
   const { search, setSearch, navbar, setNavbar } = useContext(AuthContext);
 
-  //Logíca para trocar a class do formulário para a barra de pesquisa estár visivel ou invisivel
+ 
   const searchMenu = navbar ? `flex` : "invisible";
 
-  //função para quando o usuário voltar para página inicial resetar o input e mostrar novamente a barra de pesquisa
+  
   function reset() {
-    setNavbar(!navbar);
+    setNavbar(true);
     setSearch("");
   }
 
   return (
     <nav className="py-4 px-8 bg-sky-800 flex justify-center items-center">
       <Link to="/" onClick={reset}>
-        <img className="w-1/5" src={Logo} alt="Logo Pokemon" />
+        <img className="w-1/5 sm:w-3/5" src={Logo} alt="Logo Pokemon" />
       </Link>
 
       <form className={`${searchMenu} gap-2 `}>

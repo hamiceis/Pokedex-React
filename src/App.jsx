@@ -4,7 +4,7 @@ import { Router } from "./routes";
 
 function App() {
 
-//Componente principal App que possui componente Navbar e as routas do componente routes;
+
   return (
     <div>
       <Navbar />

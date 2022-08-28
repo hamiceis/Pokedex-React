@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function PokeCard({ pokemon, showLink = true }) {
-  //função para pegar os nomes, separar pelo espaço e transformar em Array, para poder pegar a primeira letra de cada nome e colocar em letra maíuscula
+
   const namesUppercase = (str) => {
     const palavra = str.split(" ");
 
@@ -13,12 +13,12 @@ export default function PokeCard({ pokemon, showLink = true }) {
 
     return palavraTrans;
   };
-  //função para pegar os Array de nomes e transformar em string e separar por |
+  
   const type = (array) => array.map((p) => p.type.name).join(" | ");
 
   return (
     <div
-      className={`flex flex-col p-2 shadow-xl shadow-gray-900 justify-between mb-10 bg-gradient-to-tr ${pokemon.types[0].type.name} transition duration-200 ease-linear hover:-translate-y-2.5 text-zinc-900 w-[30%] border-2 border-black`}
+      className={`flex flex-col p-2 shadow-xl shadow-gray-900 justify-between mb-10 bg-gradient-to-tr ${pokemon.types[0].type.name} transition duration-200 ease-linear hover:-translate-y-2.5 text-zinc-900 w-[30%] border-2 border-black sm:w-[47%] `}
     >
       <img
         className="p-2 mb-4"
@@ -34,7 +34,7 @@ export default function PokeCard({ pokemon, showLink = true }) {
         {namesUppercase(type(pokemon.types))}
       </p>
 
-      {/* Botão para detalhes que redireciona e passa o id do pokemon pela URL, Link redireciona para pagina Pokemon onde criamos essa rota no arquivo routes*/}
+      
       {showLink && (
         <Link
           className="text-center text-2xl p-2 m-2 bg-zinc-50 transition-colors  border-black border-2 rounded-full hover:bg-transparent "
