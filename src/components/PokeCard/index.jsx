@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function PokeCard({ pokemon, showLink = true }) {
 
+  //função para deixar a primeira letra de cada palavra em maíuscula
   const namesUppercase = (str) => {
     const palavra = str.split(" ");
 
@@ -13,7 +14,7 @@ export default function PokeCard({ pokemon, showLink = true }) {
 
     return palavraTrans;
   };
-  
+  //função para poder selecionar pegar os nomes de cada Array e transformar em string e separar entre |   
   const type = (array) => array.map((p) => p.type.name).join(" | ");
 
   return (
@@ -34,7 +35,7 @@ export default function PokeCard({ pokemon, showLink = true }) {
         {namesUppercase(type(pokemon.types))}
       </p>
 
-      
+      {/*Botão para redirecionar a pagina para pagina pokemon,e recebe um id no params */}
       {showLink && (
         <Link
           className="text-center text-2xl p-2 m-2 bg-zinc-50 transition-colors  border-black border-2 rounded-full hover:bg-transparent "

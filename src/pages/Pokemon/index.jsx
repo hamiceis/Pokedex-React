@@ -4,14 +4,18 @@ import { AuthContext } from "../../Providers/auth";
 import { useFetch } from "../../services/useFetch";
 
 export function Pokemon() {
-
+  //ContextAPI que vai alterar esconder o barra de pesquisa
   const { setNavbar, navbar } = useContext(AuthContext);
+  //Pega o id passado pelo parâmetros da URL   
   const { id } = useParams();
+  //faz uma requisição na API que recebe dentro da URL o id do pokemon especifico
   const { data } = useFetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
 
+  //funções para mostrar o tipo de pokemon e sua habilidade
   const type = (types) => types?.[0].type.name;
   const ability = (abilities) => abilities?.[0].ability.name;
 
+  //Quando a página for carregada a barra de pesquisa vai mudar para false para esconder 
   useEffect(() => {
     setNavbar(!navbar);
   }, [id]);

@@ -5,13 +5,13 @@ import { useContext, useRef } from "react";
 import { AuthContext } from "../../Providers/auth";
 
 export function Navbar() {
-
+  //contextAPI para que possamos passar props e valores search, navbar para esconder e mostrar o input do form 
   const { search, setSearch, navbar, setNavbar } = useContext(AuthContext);
 
- 
+  //Ternário que vai mostrar ou esconder o form
   const searchMenu = navbar ? `flex` : "invisible";
 
-  
+  //função para resetar o form e mostrar visivel novamente
   function reset() {
     setNavbar(true);
     setSearch("");

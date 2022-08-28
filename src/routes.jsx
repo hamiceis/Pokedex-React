@@ -4,7 +4,7 @@ import { Pokemon } from './pages/Pokemon'
 
 //Componente de rotas para paginas da Home e Pokemon
 
-//Path da rota recebe um ID que vamos passar para ele quando o usuário selecionar o pokemon
+//Path da rota Pokemon recebe um ID que vamos passar para ele quando o usuário selecionar o botão de datalhes
 
 export function Router () {
   return (

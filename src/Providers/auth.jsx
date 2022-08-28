@@ -2,7 +2,7 @@ import { useState, createContext } from "react";
 
 export const AuthContext = createContext({})
 
-
+//ContextAPI para poder toda a aplicação trocar informações entre os componentes;
 
 export function AuthProvider ({children}){
 const [search, setSearch] = useState([]);

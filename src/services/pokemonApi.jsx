@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 
-
+//função que vai criar um Array dos 150 pokemons, e vai retornar um Objeto de Array's
 
 export function pokemonApi(url){
 
