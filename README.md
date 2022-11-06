@@ -16,9 +16,9 @@ Projeto pokedex com todos os 150 pokemons.
 
 ## Projeto iniciado em vite@latest
 
-Para rodar esse projeto, você vai precisar copiar esse repositório no seu computador e instalar as depêndencias.
+Para rodar esse projeto, você vai precisar copiar esse repositório no seu computador e instalar as dependências.
 
-#Instalação das depêndencias
+#Instalação das dependências
 
 `npm install`
 
